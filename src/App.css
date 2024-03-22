@@ -1,38 +1,81 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #06111d;
+  color: #fff;
+}
+
 .App {
   text-align: center;
+  margin: 20px 160px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  text-align: left;
+  padding: 14px 8px;
+  border-bottom: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-fallback{
+  font-size: 8px;
+  font-weight: bold;
+  background-color: #b877d4;
+  width: 39px;
+  height: 26px;
+  border-radius: 33px;
+  text-align: center;
+  padding-top: 13px;
+
+}
+
+.asset-logo{
+  width: 40px;
+  height: 40px;
+}
+
+.chain-selector {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.chain-button {
+  border: none;
+  background-color: #0000; /* Light grey */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chain-button.selected {
+  border-color: #007bff; /* Bootstrap primary blue */
+}
+
+.chain-logo {
+  width: 30px;
+  height: 30px;
+}
+.chain-details{
+  width: 100px;
+}
+.fetchButton{
+    height: 30px;
+    border-radius: 5px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+.addressInput{
+  padding: 0 5px;
+  height: 30px;
+  border-radius: 5px;
+  width: 50%;
+  margin-right: 5px;
 }
